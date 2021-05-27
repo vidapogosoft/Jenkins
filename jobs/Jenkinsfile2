@@ -31,14 +31,14 @@ stage("paso 2"){
   post {
       always {          
           deleteDir()
-           sh "echo 'fase always'"
+           echo 'fase always'
       }
       success {
-            sh "echo 'fase success'"
+            echo 'fase success'
         }
 
       failure {
-            sh "echo 'fase failure'"
+            echo 'fase failure'
       }
       
   }
