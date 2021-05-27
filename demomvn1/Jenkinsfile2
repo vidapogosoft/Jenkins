@@ -1,0 +1,29 @@
+pipeline {
+    agent { label 'master'}
+
+        stages {
+ 
+            stage ('test') {
+                steps {
+                  dir("demomvn1"){
+                        echo 'mvn clean compile test'
+                  }
+                   
+                   
+                }
+            }
+
+            stage ('Build application') {
+                steps {
+                      echo "compilo aplicacion" 
+                }
+            }
+  
+            stage ('Create docker image') {
+                steps {
+                 echo "creando docker"
+                }
+
+            }
+        }
+}
