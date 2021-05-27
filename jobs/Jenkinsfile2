@@ -14,10 +14,19 @@ pipeline {
      
       steps {
           script {			
-           "echo 'hola mundo'"
+           echo 'hola curso de testing con jenkins'
         }
       }
     }
+stage("paso 2"){
+     
+      steps {
+          script {      
+           echo 'hola paso 2'
+        }
+      }
+    }
+
   }
   post {
       always {          
