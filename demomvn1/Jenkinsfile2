@@ -13,6 +13,16 @@ pipeline {
                 }
             }
 
+        stage ('test2') {
+                steps {
+                  dir("demomvn1"){
+                        echo 'mvn test -Dtest=test_class_1'
+                  }
+                   
+                   
+                }
+            }
+
             stage ('Build application') {
                 steps {
                       echo "compilo aplicacion" 
