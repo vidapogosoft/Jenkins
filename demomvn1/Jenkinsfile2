@@ -6,7 +6,7 @@ pipeline {
             stage ('test') {
                 steps {
                   dir("demomvn1"){
-                         'mvn clean compile test'
+                         "mvn clean compile test"
                   }
                    
                    
